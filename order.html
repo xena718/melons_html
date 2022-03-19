@@ -1,11 +1,12 @@
 <!DOCTYPE html> 
 <html>
     <head>
-        <title>Order a Melongram!</title>
+        <title>Order a Melongram for loved ones!</title>
+        <!-- the above title must be text-only and is shown in the browser's title bar or in the page's tab. -->
     </head>
     <body>
         <h1>
-            Order a Melongram
+            Order a Melongram!
         </h1>
         <p>
             There's no better way to show a loved one you care than with a Melongram.
@@ -36,16 +37,26 @@
         </table>
         <h2>Order Form</h2>
         <form>
-            <label>Your Name</label>
-            <input type="text" name="name">
-            <label>Who are we sending this to</label>
-            <input type="text" name="recipent">
-            <label>Choose a melon</label>
-            <select name="melon">
-                <option value="watermelon">Watermelon</option>
-                <option value="canteloupe">Canteloupe</option>
-                <option value="honeydew">Honeydew</option>
-            </select>
+            <div>
+                <label>Your Name</label>
+                <input type="tex",name="name">
+            </div>
+            <!-- div is a block element. starts on a new line. The following works but it needs line-breaker to make it look nicely formated -->
+            <!-- <label>Your Name</label> -->
+            <!-- <input type="text" name="name">  -->
+            <div>
+                <label>Who are we sending this to</label>
+                <input type="text" name="recipent">
+            </div>
+            <div>
+                <label>Choose a melon</label>
+                <select name="melon">
+                    <option value="watermelon">Watermelon</option>
+                    <option value="canteloupe">Canteloupe</option>
+                    <option value="honeydew">Honeydew</option>
+                </select>
+            </div>
+           <div>
             <label>When should we deliver?</label>
             <input type="radio" name="time" value="am"> Morning
             <!-- <label>Morning</label> -->
@@ -53,10 +64,15 @@
             <!-- <label>Evening</label> -->
             <input type="radio" name="time" value="any"> Any time
             <!-- <label>Any time</label> -->
+           </div>
+           <div>
             <label>Enter your message:</label>
             <textarea name="message"></textarea>
+           </div>
+           <div>
             <label>Subscribe to our newsletter</label>
             <input type="checkbox" name="Subscribe" value="yes">
+           </div>
             <button type="submit">Submit</button>    
         </form>
     </body>
