@@ -38,40 +38,48 @@
         <h2>Order Form</h2>
         <form>
             <div>
-                <label>Your Name</label>
-                <input type="tex",name="name">
+                <label for="input name">Your Name</label>
+                <input type="tex" name="name" id="input name">
             </div>
             <!-- div is a block element. starts on a new line. The following works but it needs line-breaker to make it look nicely formated -->
             <!-- <label>Your Name</label> -->
             <!-- <input type="text" name="name">  -->
             <div>
-                <label>Who are we sending this to</label>
-                <input type="text" name="recipent">
+                <label for="melon_receiver">Who are we sending this to</label>
+                <input type="text" name="recipent" id="melon_receiver">
             </div>
             <div>
-                <label>Choose a melon</label>
-                <select name="melon">
+                <label for="melon_choice">Choose a melon</label>
+                <select name="melon" id="melon_choice">
                     <option value="watermelon">Watermelon</option>
                     <option value="canteloupe">Canteloupe</option>
                     <option value="honeydew">Honeydew</option>
                 </select>
             </div>
-           <div>
-            <label>When should we deliver?</label>
-            <input type="radio" name="time" value="am"> Morning
-            <!-- <label>Morning</label> -->
-            <input type="radio" name="time" value="pm"> Evening
-            <!-- <label>Evening</label> -->
-            <input type="radio" name="time" value="any"> Any time
-            <!-- <label>Any time</label> -->
+            <fieldset>
+                <legend>When would we deliver</legend>
+                <div>
+                    <input type="radio" name="time" value="am" id="delivery_time"> 
+                    <label>Morning</label>
+                </div>
+                    <input type="radio" name="time" value="pm" id="delivery_time"> 
+                    <label>Evening</label>
+                <div>
+                    
+                </div>
+                    <input type="radio" name="time" value="any" id="delivery_time"> 
+                    <label>Any time</label>
+                <div>
+                    
+                </div>
+            </fieldset>
+
+            <label for="message">Enter your message:</label>
+            <textarea name="message" id="message"></textarea>
            </div>
            <div>
-            <label>Enter your message:</label>
-            <textarea name="message"></textarea>
-           </div>
-           <div>
-            <label>Subscribe to our newsletter</label>
-            <input type="checkbox" name="Subscribe" value="yes">
+            <label for="subscribe">Subscribe to our newsletter</label>
+            <input type="checkbox" name="Subscribe" value="yes" id="subscribe">
            </div>
             <button type="submit">Submit</button>    
         </form>
